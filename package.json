@@ -64,7 +64,7 @@
     "d3-random": "1",
     "d3-scale": "2",
     "d3-scale-chromatic": "1",
-    "d3-selection": "https://github.com/amjarosik/d3-selection.git#master",
+    "d3-selection": "git+https://github.com/amjarosik/d3-selection.git#master",
     "d3-shape": "1",
     "d3-time": "1",
     "d3-time-format": "2",
