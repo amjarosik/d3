@@ -25,6 +25,9 @@
     "url": "https://github.com/d3/d3.git"
   },
   "scripts": {
+    "usun": "rimraf dist",
+    "j2m": "json2module package.json > dist/package.js",
+    "nroll": "node rollup.node",
     "pretest": "rimraf dist && mkdir dist && json2module package.json > dist/package.js && node rollup.node",
     "test": "tape 'test/**/*-test.js'",
     "prepublishOnly": "npm run test && rollup -c --banner \"$(preamble)\" && uglifyjs -b beautify=false,preamble=\"'$(preamble)'\" dist/d3.js -c negate_iife=false -m -o dist/d3.min.js",
